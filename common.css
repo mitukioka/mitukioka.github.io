@@ -1,1 +1,239 @@
+```css
+/* =========================
+   Base
+========================= */
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background: #f5f5f5;
+    color: #333;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans JP",
+        sans-serif;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   Layout
+========================= */
+
+.container {
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.site-header {
+    padding: 70px 0 60px;
+
+    background: #222;
+    color: white;
+
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+
+    font-size: 2.5rem;
+    letter-spacing: 0.08em;
+}
+
+.subtitle {
+    margin: 5px 0 0;
+
+    color: #bbb;
+}
+
+
+/* =========================
+   Section
+========================= */
+
+.section {
+    margin: 50px 0;
+}
+
+.section h2 {
+    margin-bottom: 25px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 2px solid #ddd;
+
+    font-size: 1.8rem;
+}
+
+
+/* =========================
+   Profile
+========================= */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding: 30px;
+
+    background: white;
+    border-radius: 12px;
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #eee;
+    border-radius: 50%;
+
+    font-size: 40px;
+}
+
+.profile-info h3 {
+    margin: 0 0 5px;
+}
+
+.profile-info p {
+    margin: 0;
+}
+
+
+/* =========================
+   Skills
+========================= */
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.skill-list li {
+    padding: 6px 15px;
+
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 999px;
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+
+    background: white;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+
+/* =========================
+   Links
+========================= */
+
+.link-list {
+    padding: 0;
+
+    list-style: none;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #1677cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+    margin-top: 80px;
+    padding: 30px;
+
+    background: #222;
+    color: #aaa;
+
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 50px 0 40px;
+    }
+
+    .site-header h1 {
+        font-size: 2rem;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+```
