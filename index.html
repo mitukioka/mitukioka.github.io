@@ -1,18 +1,117 @@
-
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>俺のサイト</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>自己紹介 | Your Name</title>
+
+    <link rel="stylesheet" href="common.css">
 </head>
 
 <body>
-    <h1>こんにちは</h1>
-    <p>ここは俺のサイトです。</p>
 
-    <button onclick="alert('Hello!')">
-        押してみて
-    </button>
+    <header class="site-header">
+        <div class="container">
+            <h1>YOUR NAME</h1>
+            <p class="subtitle">自己紹介サイト</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Profile -->
+        <section class="section">
+            <h2>Profile</h2>
+
+            <div class="profile">
+                <div class="profile-icon">
+                    🌙
+                </div>
+
+                <div class="profile-info">
+                    <h3>岡みつき</h3>
+                    <p>
+                        岡みつきと申します。略して「おかみ」とお呼びいただくと喜びます。<br>
+                        ゆっくり実況が大好きです。Minecraftが大好きです。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About -->
+        <section class="section">
+            <h2>About Me</h2>
+
+            <p>
+                7月生まれのしし座です。ほどほどに年を食っています。<br>
+                ほぼ同名義でマイクラを通じた別の活動を細々していたりしますが、別人ということにしておいてください。<br>
+                MinecraftのほかにはSatisfactoryやSplatoon3、モンスターハンター、遊戯王MDなんかも結構好きです。いずれ動画にしたいね。
+            </p>
+        </section>
+
+
+        <!-- good -->
+        <section class="section">
+            <h2>好きなこと</h2>
+
+            <ul class="skill-list">
+                <li>HTML / CSSをカタカタする</li>
+                <li>LLMを突っつく</li>
+                <li>動画を作る</li>
+                <li>ゴリ押しする</li>
+            </ul>
+        </section>
+
+        <!-- bad -->
+        <section class="section">
+            <h2>苦手なこと</h2>
+
+            <ul class="skill-list">
+                <li>計算をする</li>
+                <li>怖いゲームをする</li>
+                <li>大きい音が鳴るもの</li>
+            </ul>
+        </section>
+
+        <!-- Links -->
+        <section class="section">
+            <h2>Links</h2>
+
+            <ul class="link-list">
+                <li>
+                    <a href="https://github.com/mitukioka" target="_blank">
+                        GitHub
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/@Oka-Mitsuki-Okami" target="_blank">
+                        YouTube
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.nicovideo.jp/user/145431233" target="_blank">
+                        niconico
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/mituki_oka_mi" target="_blank">
+                        X
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Oka Mituki</p>
+    </footer>
+
 </body>
 </html>
+```
